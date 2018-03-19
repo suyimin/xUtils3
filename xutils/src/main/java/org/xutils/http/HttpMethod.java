@@ -1,7 +1,6 @@
 package org.xutils.http;
 
 /**
- * Created by wyouflf on 15/8/4.
  * HTTP谓词枚举
  */
 public enum HttpMethod {
@@ -39,7 +38,6 @@ public enum HttpMethod {
     public static boolean permitsRequestBody(HttpMethod method) {
         return method == POST
                 || method == PUT
-                || method == PATCH
-                || method == DELETE;
+                || method == PATCH;
     }
 }

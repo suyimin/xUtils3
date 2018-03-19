@@ -33,3 +33,13 @@ android {
         targetCompatibility JavaVersion.VERSION_1_6
     }
 }
+
+task makeJar(type: Copy) {
+    delete 'build/libs/xutils3.jar'
+    from('build/intermediates/bundles/default/')
+    into('build/libs/')
+    include('classes.jar')
+    rename ('classes.jar', 'xutils3.jar')
+}
+
+makeJar.dependsOn(assemble)
