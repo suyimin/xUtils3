@@ -86,6 +86,10 @@ public final class x {
         private Ext() {
         }
 
+        /**
+         * 在Application的onCreate方法调用
+         * @param app
+         */
         public static void init(Application app) {
             TaskControllerImpl.registerInstance();
             if (Ext.app == null) {

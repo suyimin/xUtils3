@@ -12,6 +12,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 /**
  * Created by wyouflf on 15/6/5.
  * 异步任务的管理类
+ * 主要用于管理Http网络请求
  */
 public final class TaskControllerImpl implements TaskController {
 
